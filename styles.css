@@ -1,0 +1,18 @@
+body {
+  font-family: 'Chelsea Market', cursive;
+}
+
+h3 {
+  padding: 20px 0px;
+  font-family: 'Chelsea Market', cursive;
+}
+
+.table, th, tr, td {
+  font-family: 'Chelsea Market', cursive;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+}
+
+th {
+  background-color: lightgray;
+}
