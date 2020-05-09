@@ -4,7 +4,6 @@ class PageHeader {
   }
   updateAverage (newAverage) {
     var mean = this.headerElement.querySelector("span");
-    mean.innerHTML = "";
-    mean.append(newAverage);
+    mean.innerHTML = newAverage
   }
 }
