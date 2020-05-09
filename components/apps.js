@@ -12,6 +12,12 @@ class App {
 
   handleGetGradesSuccess(grades) {
     this.gradeTable.updateGrades(grades);
+    var final = 0;
+    for (var i = 0; i < grades.length; i++) {
+      final += grades[i].grade;
+    }
+    var avg = final/grades.length;
+    this.pageHeader.updateAverage(avg);
   }
 
   getGrades() {
