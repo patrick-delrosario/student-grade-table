@@ -13,6 +13,6 @@ class GradeTable {
       course.textContent = grades[i].course;
       grade.textContent = grades[i].grade;
 
-      $("tbody").append(row, fullName, course, grade);
+      tBody.append(row, fullName, course, grade);
   }}
 }
