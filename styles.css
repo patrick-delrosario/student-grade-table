@@ -2,9 +2,24 @@ body {
   font-family: 'Chelsea Market', cursive;
 }
 
-h3 {
-  padding: 20px 0px;
+.container {
+  border: 1px solid red;
+}
+
+.row {
   font-family: 'Chelsea Market', cursive;
+}
+
+.align-right {
+  text-align: right;
+}
+
+h3, h5 {
+  padding: 20px 0px;
+}
+
+h5 {
+  padding: 26px 0px;
 }
 
 .table, th, tr, td {
