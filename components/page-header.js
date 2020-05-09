@@ -3,6 +3,8 @@ class PageHeader {
     this.headerElement = headerElement;
   }
   updateAverage (newAverage) {
-    this.headerElement.querySelector("span").append(newAverage);
+    var mean = this.headerElement.querySelector("span");
+    mean.innerHTML = "";
+    mean.append(newAverage);
   }
 }
