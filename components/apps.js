@@ -73,15 +73,16 @@ class App {
   }
 
   handleDeleteGradeError(error) {
-    console.error()
+    console.error();
   }
 
   handleDeleteGradeSuccess() {
-    this.getGrades(this)
+    this.getGrades();
   }
 
   start() {
     this.getGrades();
     this.gradeForm.onSubmit(this.createGrade);
+    this.gradeTable.onDeleteClick(this.deleteGrade);
   }
 }
