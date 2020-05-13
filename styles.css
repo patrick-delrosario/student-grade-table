@@ -27,3 +27,11 @@ h5 {
 th {
   background-color: lightgray;
 }
+
+.icon {
+  padding: 10px;
+  background: gray;
+  color: white;
+  min-width: 50px;
+  text-align: center;
+}
