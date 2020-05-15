@@ -12,18 +12,11 @@ class GradeTable {
       tBody.append(tRow);
     }
 
-    /*for (var i = 0; i < grades.length; i++) {
-      var row = document.createElement("tr");
-      var name = document.createElement("td");
-      var course = document.createElement("td");
-      var grade = document.createElement("td");
-
-      name.textContent = grades[i].name;
-      course.textContent = grades[i].course;
-      grade.textContent = grades[i].grade;
-
-      tBody.append(row, name, course, grade);
-    }*/
+    if (grades != 0) {
+      document.querySelector("p").classList.add("d-none");
+    } else {
+      document.querySelector("p").classList.remove("d-none");
+    }
   }
 
   onDeleteClick(deleteGrade) {
@@ -37,6 +30,7 @@ class GradeTable {
     var dGrade = document.createElement("td");
     var operation = document.createElement("td");
     var btn = document.createElement("button");
+    btn.className = "btn btn-secondary";
     btn.innerHTML = "Delete";
     btn.addEventListener("click", function () {
       deleteGrade(data.id);
