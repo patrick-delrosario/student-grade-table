@@ -6,9 +6,12 @@ class GradeTable {
   updateGrades (grades) {
     var tBody = this.tableElement.querySelector("tbody");
     tBody.innerHTML = "";
-    for (var i = 0; i < grades.legnth; i++) {
-      tBody.append(this.renderGradeRow(grades[i][1], this.deleteGrade));
+
+    for (var i = 0; i < grades.length; i++) {
+      var tRow = this.renderGradeRow(grades[i], this.deleteGrade);
+      tBody.append(tRow);
     }
+
     /*for (var i = 0; i < grades.length; i++) {
       var row = document.createElement("tr");
       var name = document.createElement("td");
